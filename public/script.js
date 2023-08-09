@@ -1,7 +1,7 @@
 const petsContainer = document.getElementById('pets');
 
 // Fetch and display all pets from the server
-fetch('./api/v1/pets')
+fetch("/api/v1/pets")
     .then(response => response.json())
     .then(pets => {
         petsContainer.innerHTML = '<h2>All Pets</h2>';

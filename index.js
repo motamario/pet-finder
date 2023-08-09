@@ -23,9 +23,8 @@ app.get('/api', (req, res) => {
 
 // get all pets from the database
 app.get('/api/v1/pets', (req, res) => {
-    // send the pets array as a response
-    res.send(pets); // Sending the pets array as the response
-
+    // send the pets array as a JSON response
+    res.json(pets);
 });
 
 // get pet by name
